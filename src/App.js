@@ -12,7 +12,7 @@ function App() {
   ])
 
   const [newTodoName, setNewTodoName] = useState(''); 
-  const [value, setValue] = useState(false)
+  const [value, setValue] = useState('')
 
   function handleInputChange(event) {
     setNewTodoName(event.target.value)
