@@ -11,8 +11,8 @@ function App() {
     {name: "Car's MOT", priority: "high"},
   ])
 
-  const [newTodoName, setNewTodoName] = useState(''); 
-  const [value, setValue] = useState('')
+  const [newTodoName, setNewTodoName] = useState('');
+  const [value, setValue] = useState('');
 
   function handleInputChange(event) {
     setNewTodoName(event.target.value)
@@ -51,7 +51,7 @@ function App() {
       <h1>ToDo's</h1>
       <form onSubmit={saveNewTodo}>
         <label htmlFor="todo-name">Add New Todo:</label>
-        <input id="todo-name" type="text" value={newTodoName}onChange={handleInputChange}/>
+        <input id="todo-name" type="text" value={newTodoName} onChange={handleInputChange}/>
         High<input type="radio" value="high" checked={value === "high"} onChange={handleRadioChange}/> 
         Low<input type="radio" value="low" checked={value === "low"} onChange={handleRadioChange}/> 
         <input type="submit" value="Save Item"/>
